@@ -1,0 +1,179 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap" rel="stylesheet">
+        <title>Linking Bootstrap Navbar</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Indie Flower', cursive;
+            }
+            #navdiv{
+                background-color: #D99F9B;
+            }
+            #dropdown{
+                background-color: #D99F9B;
+            }
+            /* home section  */
+            #heading{
+                margin-top: 90px;
+            }
+            #heading h1{
+                font-size: 110px;
+                font-weight: 100;
+            }
+            #heading h4{
+                font-size: 40px;
+            }
+            #heading button{
+                background-color: #D99F9B;
+                width: 200px;
+            }
+            #heading button:hover{
+                background-color: white;
+                border-color: #D99F9B;
+            }
+            #heading button:active{
+                background-color: #D99F9B;
+            }
+            /* about section  */
+            #aboutcard{
+                border: 2px solid #D99F9B;
+                box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.388);
+            }
+            #aboutcard h1{
+                color: #D99F9B;
+            }
+            #aboutcard h2{
+                color: #D99F9B;
+            }
+            /* contact section  */
+            #contact{
+                font-size: 25px;
+            }
+            #contact legend{
+                font-size: 60px;
+                color: #D99F9B;
+            }
+            #contact button{
+                background-color: #D99F9B;
+                width: 300px;
+                height: 50px;
+                font-size: 30px;
+            }
+            #contact button:hover{
+                background-color: white;
+                border: 1px solid #D99F9B;
+            }
+            #contact button:active{
+                background-color: #D99F9B;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navbar  -->
+        <div class="container-fluid" id="navdiv">
+            <nav>
+                <ul class="nav nav-tabs justify-content-end" role="tablist">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark active" id="homeid" data-bs-toggle="tab" data-bs-target="#home-id">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark dropdown-toggle" data-bs-toggle="dropdown" id="" data-bs-toggle="tab" data-bs-target="">Services</a>
+                            <ul class="dropdown-menu" id="dropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#" id="" data-bs-toggle="tab" data-bs-target="">Dress Design</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" id="" data-bs-toggle="tab" data-bs-target="">T-shirt Design</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" id="" data-bs-toggle="tab" data-bs-target="">Jeans Design</a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#" id="" data-bs-toggle="tab" data-bs-target="">Facebook Profile</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark" id="aboutid" data-bs-toggle="tab" data-bs-target="#about-id">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark" id="contactid" data-bs-toggle="tab" data-bs-target="#contact-id">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container-fluid tab-content">
+            <!-- home section  -->
+            <div class="tab-pane fade show active container-fluid" id="home-id" aria-labelledby="homeid">
+                <div class="row">
+                    <div class="col-6 p-5" id="heading">
+                        <h1>Welcome</h1>
+                        <h4>We Make What You Imagine</h4>
+                        <button class="btn btn-lg m-5">Explore More</button>
+                    </div>
+                    <div class="col-6">
+                        <img src="download-removebg-preview.png" alt="Bg Image" width="100%">
+                    </div>
+                </div>
+            </div>
+            <!-- About section  -->
+            <div class="tab-pane fade container-fluid m-2" id="about-id" aria-labelledby="aboutid">
+                <div class="row justify-content-md-center">
+                    <div class="col-8 m-5 text-center p-5" id="aboutcard">
+                        <h1>About Us</h1>
+                        <p>THE FASHION STORE caters to thoughtful shoppers who appreciate unique designs and top quality pieces you just can't find anywhere else. We are constantly curating fresh new collections and looking for the next big thing our customers will love. Founded in Vienna in 2019, we are proud to be your Online Clothing Shop that you can rely on for our expert service and care.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m-3 text-center p-5" id="aboutcard">
+                        <h2>Our Vision</h2>
+                        <p>Our Vision is to change the way our society connects with the fashion industry by providing our customers with products that are ethically and responsibly sourced.</p>
+                    </div>
+                    <div class="col m-3 text-center p-5" id="aboutcard">
+                        <h2>Our Mission</h2>
+                        <p>Our Mission is to make a difference through our branding by staying ahead of the fashion trends, defining style and giving customers what they want.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- contact section  -->
+            <div class="tab-pane fade container-fluid" id="contact-id" aria-labelledby="contactid">
+                <div class="row">
+                    <div class="col-6 p-4" id="contact">
+                        <form action="#">
+                            <fieldset>
+                                <legend class="text-center">Contact Us</legend>
+                                <label for="yourname">Your Name :</label>
+                                <br>
+                                <input type="text" id="yourname" placeholder="Name">
+                                <br><br>
+                                <label for="email">Your E-mail :</label>
+                                <br>
+                                <input type="email" id="email" placeholder="E-mail">
+                                <br><br>
+                                <label for="messege">Send Messege :</label>
+                                <br>
+                                <textarea name="messege" id="messege" cols="40" rows="2" placeholder="Type Here"></textarea>
+                                <br><br>
+                                <button class="btn">Send</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <img src="email.png" alt="Contact Us" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
